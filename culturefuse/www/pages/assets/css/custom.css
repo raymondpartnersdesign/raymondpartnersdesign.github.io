@@ -1,0 +1,193 @@
+/* 
+/* 
+/*  custom.css
+/*
+/*  If not using Gulp and Sass, add your custom CSS below then include it
+/*  in your page by adding a reference to assets/css/custom.css in the head of each page.
+/*
+*/
+
+#english { padding-left: 5px; }
+
+a#search { padding: 5px 0px 0px 0px; }
+a#search i, footer i { color: #fff; }
+a#search i:hover, footer i:hover { color: #ccc; }
+
+
+
+nav#global a { color: #595959!important; }
+nav#global a:hover { color: #444!important; }
+nav#global .active { color: #8C8D9A!important; }
+
+
+span#copyright { font-size: .8em!important; }
+
+
+#search { color: #fff; }
+
+ul#language a.nav-link
+{
+	color: #fff!important;
+	font-weight: normal;
+	font-size: .8em!important;
+}
+
+ul#language a.nav-link.active { font-weight: bold; }
+p, li { color: #222; }
+.bg-gradient-3 { background: linear-gradient(45deg, #ED3675 0%, #EE5F39 100%)!important; }
+.bg-dark { background-color: #8C8D9A!important; }
+
+body
+{
+	font-family: 'Open Sans', sans-serif!important;
+	color: #000;
+}
+
+p a:link, p a:visited { color: #444; }
+p a:hover, p a:active { color: #666; }
+
+h1, h2, .h2, h3 { font-family: 'Source Sans Pro', sans-serif!important; }
+.h2 { font-size: 1.5em; }
+
+h1, h2, .h2
+{
+	font-weight: 700!important;
+	color: #ED3675;
+}
+
+h3
+{
+	font-weight: 700!important;
+	color: #000;
+}
+
+.list-social-links i { font-size: 1.5em; }
+
+.list-social-links > li.text-white a
+{
+	color: #fff;
+	background: none;
+}
+
+.list-social-links > li.text-white a:hover
+{
+	color: #fff;
+	background: none;
+}
+
+body { background-color: #fff; }
+
+
+body#home section#hero
+{
+	background-image: url(../img/home_page_cube.png);
+	background-repeat: no-repeat;
+	background-attachment: local;
+	background-position: right bottom;
+}
+
+body#services section
+{
+	background-image: url(../img/services_page_cube.png);
+	background-repeat: no-repeat;
+	background-attachment: local;
+	background-position: right 80px;
+}
+
+body#contact section
+{
+	background-image: url(../img/contact_page_cube.png);
+	background-repeat: no-repeat;
+	background-attachment: local;
+	background-position: right bottom;
+}
+
+body#about section
+{
+	background-image: url(../img/about_page_cube.png);
+	background-repeat: no-repeat;
+	background-attachment: local;
+	background-position: left bottom;
+}
+
+body#products section
+{
+	background-image: url(../img/products_page_cube.png);
+	background-repeat: no-repeat;
+	background-attachment: local;
+	background-position: center bottom;
+}
+
+p#home-lead { font-size: 2.25em; }
+p#home-lead span.logo { font-size: 1.25em; }
+p#home-lead span.logo-culture { color: #E94D15; }
+p#home-lead { color: #444!important; }
+
+p#home-lead span.logo-fuse
+{
+	font-weight: bold;
+	color: #DC007A;
+}
+
+p#home-lead span.action
+{
+	font-weight: bold;
+	color: #444!important;
+}
+
+.btn-dark
+{
+	color: #fff;
+	background-color: #797A8A;
+	border-color: #999;
+}
+
+a#btn-send
+{
+	color: #fff;
+	border: none;
+	border-radius: 100px;
+	background-color: #ED3675;
+}
+
+a#btn-send:hover, a#btn-send:active 
+{
+	background-color: #F38963;
+}
+
+ul#custom-services
+{
+	list-style: none;
+	/* Remove default bullets */
+}
+
+ul#custom-services li::before
+{
+	content: "\2022";
+	/* Add content: \2022 is the CSS Code/unicode for a bullet */
+	color: #ED3675;
+	/* Change the color */
+	font-weight: 700;
+	/* If you want it to be bold */
+	display: inline-block;
+	/* Needed to add space between the bullet and the text */
+	width: 1em;
+	/* Also needed for space (tweak if needed) */
+	margin-left: -1em;
+	/* Also needed for space (tweak if needed) */
+}
+
+@media screen and (max-width: 414px) {
+
+img#listen {margin: 1.5em 0em 1em 0em!important;}
+
+  p#home-lead {font-size: 1.75em;}
+  
+  body#home section#hero,
+body#services section,
+body#contact section,
+body#about section,
+body#products section{
+    background-image: none;
+  }
+}
